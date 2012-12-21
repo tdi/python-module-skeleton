@@ -23,4 +23,8 @@ setup(
     install_requires=requires,
     license=open('LICENSE').read(),
     zip_safe=False,
+    entry_points = {
+        # the script will be called runit
+        'console_scripts': ['runit = my_package.myfile:main',]
+        },
 )
